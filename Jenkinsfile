@@ -19,8 +19,13 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'npm start'
+                sh 'npm start &'
+                sh 'sleep 1'
+                input message: 'Finished using the web site? (Click "Proceed" to continue)'
+                sh 'kill $(sudo lsof -t -i:4100)'
             }
         }
+
+
     }
 }
