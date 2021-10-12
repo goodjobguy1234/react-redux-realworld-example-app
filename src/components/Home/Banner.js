@@ -10,7 +10,7 @@ const Banner = ({ appName, token }) => {
         <h1 className="logo-font">
           {appName.toLowerCase()}
         </h1>
-        <p>A place to share your knowledge.</p>
+        <p>Please Let me pass this Course and Senior.</p>
       </div>
     </div>
   );
