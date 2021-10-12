@@ -1,6 +1,6 @@
 pipeline {
     agent any {
-        image ''
+        image 'mrts/docker-python-nodejs-google-chrome'
         args '-p 4100:4100'
     }
 
