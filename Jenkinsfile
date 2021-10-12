@@ -1,7 +1,9 @@
 pipeline {
     agent {
-        image 'mrts/docker-python-nodejs-google-chrome'
-        args '-p 4100:4100'
+        docker {
+            image 'mrts/docker-python-nodejs-google-chrome'
+            args '-p 8080:8080'
+        }
     }
 
     environment {
